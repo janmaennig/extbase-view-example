@@ -4,7 +4,7 @@
 $EM_CONF[$_EXTKEY] = array(
     'title' => 'jm | Extbase View Example',
     'description' => 'Show different examples to used owen extbase controller views.',
-    'category' => 'fe',
+    'category' => 'misc',
     'author' => 'Jan Maennig',
     'author_email' => 'janmaennig@gmail.com',
     'shy' => '',
@@ -17,7 +17,7 @@ $EM_CONF[$_EXTKEY] = array(
     'modify_tables' => '',
     'clearCacheOnLoad' => 0,
     'lockType' => '',
-    'version' => '0.0.0',
+    'version' => '1.0.0-dev.1',
     'constraints' => array(
         'depends' => array(
             'typo3' => '8.5.0-8.6.99',

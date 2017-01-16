@@ -1,0 +1,22 @@
+<f:layout name="Default" />
+
+<f:section name="main">
+	<div class="row">
+		<div class="col-xs-11">
+			<h1>
+				Datensätze
+		</div>
+		<div class="cols-xs-1">
+			<f:link.action action="list" controller="RecordExcel" additionalParams="{type:1234}">
+				<span class="glyphicon glyphicon-download"></span>
+			</f:link.action>
+		</div>
+	</div>
+	<div class="list-group">
+		<f:for each="{records}" as="record">
+			<f:link.action action="single" arguments="{record: '{record}'}" class="list-group-item">
+				{record.title}
+			</f:link.action>
+		</f:for>
+	</div>
+</f:section>

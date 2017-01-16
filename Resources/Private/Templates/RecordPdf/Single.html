@@ -1,0 +1,29 @@
+<link rel="stylesheet" type="text/css"
+      href="/typo3temp/bootstrappackage/lessphp_5582b3e20749e9ff74be0f9b397a8973e2d0e3a9.css">
+
+<div class="row">
+	<div class="col-xs-12">
+		<h1>
+			{record.title}
+		</h1>
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-12">
+		<img src="{record.images.0.originalResource.publicUrl}" />
+	</div>
+</div>
+<div class="row">
+	<div class="col-xs-8" style=" width: 60%; margin-top: 25px;">
+		<f:format.html>{record.description}</f:format.html>
+	</div>
+	<div class="col-xs-4" style="float: right; width: 30%;">
+		<f:for each="{record.images}" as="image" iteration="iterator">
+			<f:if condition="{iterator.isFirst}">
+				<f:else>
+					<img src="{image.originalResource.publicUrl}" width="100%" style="margin-top: 25px; border: 1px solid #000;" />
+				</f:else>
+			</f:if>
+		</f:for>
+	</div>
+</div>

@@ -1,0 +1,24 @@
+{
+  "name": "jan-maennig/extbase-view-example",
+  "type": "typo3-cms-extension",
+  "require": {
+    "php": "^7.1"
+  },
+  "autoload": {
+    "JanMaennig\\ExtbaseViewExample\\": "Classes/"
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "JanMaennig\\ExtbaseViewExample\\Tests\\": "Tests/"
+    }
+  },
+  "require-dev": {
+    "phpunit/phpunit": "5.5.0",
+    "squizlabs/php_codesniffer": "2.7.0",
+    "phpmd/phpmd": "2.4.3",
+    "sebastian/phpcpd": "2.0.4",
+    "phpmetrics/phpmetrics": "1.10.0",
+    "mi-schi/php-code-checker": "2.2.10",
+    "typo3/cms": "7.6.11"
+  }
+}

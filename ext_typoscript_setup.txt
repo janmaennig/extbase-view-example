@@ -1,0 +1,29 @@
+plugin.tx_extbaseviewexample {
+	settings {
+		excel {
+			columns {
+				A = uid
+				B = crdate
+				C = title
+			}
+			fileName = ExcelViewResult.xlsx
+		}
+		pdf {
+			fileName = PdfViewResult.pdf
+		}
+	}
+	persistence {
+		storagePid = 37
+	}
+}
+
+pdfView = PAGE
+pdfView {
+	typeNum = 1234
+	config {
+		admPanel = 0
+		debug = 0
+		no_cache = 1
+	}
+	10 < tt_content.list.20.extbaseviewexample_examplerecords
+}

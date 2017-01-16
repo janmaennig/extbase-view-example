@@ -1,0 +1,34 @@
+<div class="container">
+	<div class="row">
+		<div class="col-xs-11">
+			<h1>
+				{record.title}
+			</h1>
+		</div>
+		<div class="cols-xs-1">
+			<f:link.action action="single" controller="RecordPdf" arguments="{record: '{record}'}" additionalParams="{type:1234}">
+				<span class="glyphicon glyphicon-download"></span>
+			</f:link.action>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-12">
+			<f:image src="{record.images.0.uid}" absolute="1" class="img-responsive" treatIdAsReference="1" width="1200"
+			         height="250c" />
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-8" style="margin-top:25px;" >
+			<f:format.html>{record.description}</f:format.html>
+		</div>
+		<div class="col-md-4">
+			<f:for each="{record.images}" as="image" iteration="iterator">
+				<f:if condition="{iterator.isFirst}">
+					<f:else>
+						<f:image src="{image.uid}" absolute="1" class="img-responsive" style="margin-top:25px;" treatIdAsReference="1" width="640" height="480c" />
+					</f:else>
+				</f:if>
+			</f:for>
+		</div>
+	</div>
+</div>

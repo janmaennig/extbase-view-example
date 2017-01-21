@@ -1,0 +1,33 @@
+<div class="container">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1>
+                {{ record.title }}
+            </h1>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-12">
+            {% for image in record.images %}
+                {% if loop.first %}
+                    <img src="{{ image.originalResource.publicUrl }}" width="1140" />
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xs-8">
+            {% autoescape %}
+                {{ record.description|raw }}
+            {% endautoescape %}
+        </div>
+        <div class="col-xs-4">
+            {% for image in record.images %}
+                {% if not loop.first %}
+                    <img src="{{ image.originalResource.publicUrl }}" width="100%"
+                         style="margin-top: 25px; border: 1px solid #000;" />
+                {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</div>

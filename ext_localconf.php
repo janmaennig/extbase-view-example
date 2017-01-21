@@ -7,11 +7,13 @@
     [
         'Record' => 'list,single',
         'RecordPdf' => 'single',
+        'RecordTwig' => 'single',
         'RecordExcel' => 'list',
     ],
     [
         'Record' => 'list,single',
         'RecordPdf' => 'single',
+        'RecordTwig' => 'single',
         'RecordExcel' => 'list',
     ]
 );

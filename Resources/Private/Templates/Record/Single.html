@@ -1,6 +1,6 @@
 <div class="container">
 	<div class="row">
-		<div class="col-xs-11">
+		<div class="col-xs-10">
 			<h1>
 				{record.title}
 			</h1>
@@ -8,6 +8,11 @@
 		<div class="cols-xs-1">
 			<f:link.action action="single" controller="RecordPdf" arguments="{record: '{record}'}" additionalParams="{type:1234}">
 				<span class="glyphicon glyphicon-download"></span>
+			</f:link.action>
+		</div>
+		<div class="cols-xs-1">
+			<f:link.action action="single" controller="RecordTwig" arguments="{record: '{record}'}">
+				<span class="glyphicon glyphicon-eye-open"></span>
 			</f:link.action>
 		</div>
 	</div>

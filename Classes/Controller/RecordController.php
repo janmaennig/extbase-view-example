@@ -22,6 +22,9 @@ class RecordController extends ActionController
         $this->view->assign('records', $records);
     }
 
+    /**
+     * @param Record $record
+     */
     public function singleAction(Record $record)
     {
         $this->view->assign('record', $record);

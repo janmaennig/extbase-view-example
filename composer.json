@@ -2,7 +2,8 @@
   "name": "jan-maennig/extbase-view-example",
   "type": "typo3-cms-extension",
   "require": {
-    "php": "^7.1"
+    "php": "^7.0",
+    "mpdf/mpdf": "dev-master"
   },
   "autoload": {
     "JanMaennig\\ExtbaseViewExample\\": "Classes/"
@@ -19,6 +20,6 @@
     "sebastian/phpcpd": "2.0.4",
     "phpmetrics/phpmetrics": "1.10.0",
     "mi-schi/php-code-checker": "2.2.10",
-    "typo3/cms": "7.6.11"
+    "typo3/cms": "^8.1"
   }
 }

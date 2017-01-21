@@ -10,11 +10,4 @@ use JanMaennig\ExtbaseViewExample\View\PdfView;
 class RecordPdfController extends RecordController
 {
     protected $defaultViewObjectName = PdfView::class;
-
-    public function singleActionAction()
-    {
-        parent::singleActionAction();
-
-        $this->view->assign('settings', $this->settings);
-    }
 }

@@ -6,7 +6,9 @@
     "mpdf/mpdf": "dev-master"
   },
   "autoload": {
-    "JanMaennig\\ExtbaseViewExample\\": "Classes/"
+    "psr-4": {
+      "JanMaennig\\ExtbaseViewExample\\": "Classes/"
+    }
   },
   "autoload-dev": {
     "psr-4": {

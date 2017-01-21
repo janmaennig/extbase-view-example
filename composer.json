@@ -3,7 +3,8 @@
   "type": "typo3-cms-extension",
   "require": {
     "php": "^7.0",
-    "mpdf/mpdf": "dev-master"
+    "mpdf/mpdf": "dev-master",
+    "twig/twig": "^2.0"
   },
   "autoload": {
     "psr-4": {
